@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -61,28 +61,11 @@
 
 <main class="container-fluid">
 <div class="row">
-<div class="col-md-3 aside"> 
-    <section class="aside mt-3">
-        <h3 class="titulo_aside">Newsletter</h3>
-        <p>¡Recibí nuestra promociones y noticias!</p>
-        <form>
-            <div class="mb-0">
-            <label for="exampleInputEmail1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-0 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Acepto recibir ofertas por email.</label>
-            </div>
-            <button type="submit" class="btn" style="background-color: #c79f6c;">Enviar</button>
-            </form>
-    </section>
-</div>
-
-<div class="col-md-9">
-    <section class="faq text-center">
-        <h2 class="titulo_header">Contactanos</h2>
-        <form>
+<div class="col-md-12">
+    <h2 class="titulo_contacto">Contactanos</h2>
+    <div class="contenedor">
+<img src="../assets/img/contacto.png" alt="">
+        <form class="formulario">
             <div class="form-group">
                 <div class="col-auto">
                 <label for="name">Nombre</label>
@@ -96,18 +79,19 @@
                 <label for="message">Mensaje</label>
                 <textarea class="form-control" id="message" rows="4" required></textarea>
             </div>
-            <div class="mx-auto">
+            <div class="mt-2 mx-auto">
             <button type="submit" class="btn btn-primary text-right">Enviar</button></div>
         </form>
+    </div>
+</div>
 
-    <h2>Ubicación</h2>
-        <p>Encontranos en:
+    <h2 class="titulo_contacto">Ubicación</h2>
+    <div class="ubicacion">
+            <p class="mb-2">Encontranos en:
             BELGRANO
             Olleros 1794 / 4874-0478
             Horario: Lunes a Sábado de 10 a 20hs</p>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210283.30555325022!2d-58.67394866340034!3d-34.56174154636599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b8477263cb%3A0x11a56e3de5191ef0!2sThe%20Candle%20Shop%20-%20Belgrano!5e0!3m2!1ses!2sar!4v1648489296873!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210283.30555325022!2d-58.67394866340034!3d-34.56174154636599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b8477263cb%3A0x11a56e3de5191ef0!2sThe%20Candle%20Shop%20-%20Belgrano!5e0!3m2!1ses!2sar!4v1648489296873!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </main>
 
