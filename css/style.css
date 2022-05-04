@@ -1,182 +1,219 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color:rgb(226, 186, 135);
+a {
+  text-decoration: none;
+  color: #e2ba87;
 }
 
-
-h1, h2, h3{
-    font-family: 'Montserrat', sans-serif;
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-p{
-    margin-top: 0;
-    margin-bottom: 1px;
+p {
+  margin-top: 0;
+  margin-bottom: 1px;
 }
 
-body{
-    background-color: rgb(248, 236, 220);
+body {
+  background-color: #f8ecdc;
 }
 
-.aside{
-    background-color: rgb(226, 186, 135);
-    text-align: center;
-    padding: 5px;
-    font-family: 'Montserrat', sans-serif;
+.aside {
+  background-color: #e2ba87;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.titulo_aside{
-    background-color: white;
-    color: rgb(199, 159, 108);
-    border-radius: 20px;
-    padding: 0px 5px;
+.aside .titulo {
+  background-color: white;
+  color: #c79f6c;
+  border-radius: 20px;
+  padding: 0px 5px;
 }
 
-header{
-    width: 100%;
+.menu {
+  background-color: #c79f6c;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: hidden;
 }
 
-.titulo_header{
-    background-color: #c79f6c;
-    border-radius: 25px;
-    padding: 0px 15px;
+.menu ul li {
+  display: inline;
+  margin: 20px;
+  padding: 10px;
 }
 
-.menu{
-background-color: rgb(199, 159, 108);
-width: 100%;
-height: max-content;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-position: sticky;
-overflow: hidden;
+.menu il {
+  list-style: none;
 }
 
-.menu il{
-    list-style: none;
+.menu a {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
-.menu ul li{
-    display: inline;
-    margin: 20px;
-    padding: 10px;
+.menu a:hover {
+  background-color: #ffffff;
+  color: #e2ba87;
+  padding: 24px 10px;
 }
 
-.menu ul li a{
-    transition: 0.4s;
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 0 10px;
-    margin: 0 10px;
+.logo img {
+  height: 150px;
+  width: 150px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 
-.menu ul li a:hover{
-    background-color: #ffffff;
-    color: rgb(226, 186, 135);
-    padding: 24px 10px;
+.logo img :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.logo img{
-    height: 150px;
-    width: 150px;
-    transition: all 300ms;
+.productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.logo img:hover{
-    transform:scale(1.1);
+.btn {
+  background-color: #c79f6c;
+  border: solid 1px #79541e;
 }
 
-.productos{
+.btn:hover {
+  background-color: #c7a06cad;
+  border: solid 1px #79551eda;
+}
+
+.faq {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+  padding: 10px;
+}
+
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+}
+
+.ubicacion {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+.mapa {
+  height: 500px;
+  width: 700px;
+}
+
+.titulo_contacto {
+  margin: 50px;
+  text-align: center;
+}
+
+.formulario {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 4px;
+  width: 600px;
+}
+
+footer {
+  background-color: #c79f6c;
+  color: white;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 8px;
+}
+
+@media (max-width: 418px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu ul li {
+    display: block;
+    padding: 0px;
+  }
+  .contenedor img {
+    display: none;
+  }
+  .mapa {
+    width: 300px;
+  }
 }
-
-.btn{
-    background-color: #c79f6c;
-    border: solid 1px #79541e;
-}
-
-.btn:hover{
-    background-color: #c7a06cad;
-    border: solid 1px #79551eda;
-}
-
-.faq{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    margin: 20px;
-    padding: 10px;
-}
-
-.contenedor{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px;
-}
-
-.ubicacion{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-.mapa{
-    height: 500px;
-    width: 700px;
-}
-
-.titulo_contacto{
-    margin: 50px;
-    text-align: center;
-}
-
-.formulario{
-    height: max-content;
-    border-radius: 4px;
-    width: 600px;
-}
-
-footer{
-    background-color: #c79f6c;
-    color: white;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 8px;
-}
-
-@media (max-width: 418px){
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu ul li{
-        display: block;
-        padding: 0px
-    }
-
-    .contenedor img{
-        display: none;
-    }
-
-    .mapa{
-        width: 300px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,171 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color:#e2ba87;
+}
+
+
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+body{
+    background-color: $colorFondo;
+}
+
+.aside{
+    background-color: $colorSecundario;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+        .titulo{
+            background-color: white;
+            color: $colorPrimario;
+            border-radius: 20px;
+            padding: 0px 5px;
+        }
+
+
+}
+
+.menu{
+    background-color: $colorPrimario;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    overflow: hidden;
+
+            ul li{
+                display: inline;
+                margin: 20px;
+                padding: 10px;
+            }
+            il {
+                list-style: none;
+            }
+                a{
+                    transition: 0.4s;
+                    color: #ffffff;
+                    font-size: 20px;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    margin: 0 10px;
+                }
+                    a:hover{
+                        background-color: #ffffff;
+                        color: $colorSecundario;
+                        padding: 24px 10px;
+                    }
+    }
+
+    .logo img{
+        height: 150px;
+        width: 150px;
+        transition: all 300ms;
+            :hover{
+                transform:scale(1.1);
+            }
+        }
+
+        .productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn{
+    background-color: $colorPrimario;
+    border: solid 1px #79541e;
+}
+
+.btn:hover{
+    background-color: #c7a06cad;
+    border: solid 1px #79551eda;
+}
+
+.faq{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+.ubicacion{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.mapa{
+    height: 500px;
+    width: 700px;
+}
+
+.titulo_contacto{
+    margin: 50px;
+    text-align: center;
+}
+
+.formulario{
+    height: max-content;
+    border-radius: 4px;
+    width: 600px;
+}
+
+footer{
+    background-color: $colorPrimario;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
+}
+
+@media (max-width: 418px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu ul li{
+        display: block;
+        padding: 0px
+    }
+
+    .contenedor img{
+        display: none;
+    }
+
+    .mapa{
+        width: 300px;
+    }
+}
