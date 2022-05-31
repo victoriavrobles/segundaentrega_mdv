@@ -12,12 +12,13 @@ a{
 
 
 h1, h2, h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuentePrincipal;
 }
 
 p{
     margin-top: 0;
     margin-bottom: 1px;
+    font-family: $fuentePrincipal;
 }
 
 body{
@@ -28,7 +29,7 @@ body{
     background-color: $colorSecundario;
     text-align: center;
     padding: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuentePrincipal;
         .titulo{
             background-color: white;
             color: $colorPrimario;
@@ -41,6 +42,8 @@ body{
 
 .menu{
     background-color: $colorPrimario;
+    font-family: $fuente2;
+    font-weight: bold;
     width: 100%;
     height: max-content;
     display: flex;
@@ -109,7 +112,7 @@ body{
 
 .faq{
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuentePrincipal;
     margin: 20px;
     padding: 10px;
 }
@@ -145,17 +148,65 @@ body{
     width: 600px;
 }
 
+.listas{
+    padding-left: 0;
+    list-style: none;
+}
+
 footer{
     background-color: $colorPrimario;
     color: white;
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
     padding: 8px;
+    font-family: $fuente2;
+}
+
+.navfooter{
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        a {
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            &:hover {
+                color: $colorSecundario;
+            }
+        }
+    }
+}
+
+.social {
+    h3 {
+        font-weight: bold;
+        font-size: 18px;
+        color: $colorFondo;
+    }
+    ul {
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                padding: 10px;
+            }
+            &.in {
+                a {
+                    color: #df588a;
+                }
+            }
+            &.fb {
+                a {
+                    color: #3742d0;
+                }
+            }
+            &.pin {
+                a {
+                    color: #dd4d5a;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 418px){

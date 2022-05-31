@@ -9,12 +9,13 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1px;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
   background-color: #e2ba87;
   text-align: center;
   padding: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .aside .titulo {
@@ -37,6 +38,8 @@ body {
 
 .menu {
   background-color: #c79f6c;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -126,7 +129,7 @@ body {
 
 .faq {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 20px;
   padding: 10px;
 }
@@ -177,26 +180,63 @@ body {
   width: 600px;
 }
 
+.listas {
+  padding-left: 0;
+  list-style: none;
+}
+
 footer {
   background-color: #c79f6c;
   color: white;
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
   padding: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navfooter {
+  padding: 0;
+  margin: 0;
+}
+
+.navfooter li {
+  display: inline-block;
+}
+
+.navfooter li a {
+  padding: 10px;
+  color: white;
+}
+
+.navfooter li a:hover {
+  color: #e2ba87;
+}
+
+.social h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #f8ecdc;
+}
+
+.social ul li {
+  display: inline-block;
+}
+
+.social ul li a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.social ul li.in a {
+  color: #df588a;
+}
+
+.social ul li.fb a {
+  color: #3742d0;
+}
+
+.social ul li.pin a {
+  color: #dd4d5a;
 }
 
 @media (max-width: 418px) {
